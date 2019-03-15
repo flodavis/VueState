@@ -6,7 +6,8 @@
         <input class="link-input" type="text" placeholder="Add a Link" v-model="newLink" />
         </form>
      <ul>
-       <li v-for="(link,index) in links" v-bind:key="index" v-text="link">
+       <li v-for="(link,index) in links" v-bind:key="index">
+         {{ link }}
         <button v-on:click="removeLinks(index)" class="rm">Remove</button>
        </li>
      </ul>
