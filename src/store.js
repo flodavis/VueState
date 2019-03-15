@@ -5,12 +5,27 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-
+    title: 'Flows Custom Title',
+    links: [
+      'http://google.com',
+      'http://flodavis.com',
+      'http://youtube.com'
+    ]
+  },
+  getters:{
+    countLinks: state => {
+      return state.links.length;
+    }
   },
   mutations: {
-
+    ADD_LINK: (state, link) => {
+      state.links.push(link)
+    },
+    REMOVE_LINK: (state, link) => {
+      state.links.splice(link, 1) 
+    }
   },
   actions: {
-
+    removeLink: (context, link)
   }
 })

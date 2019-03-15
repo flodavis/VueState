@@ -1,4 +1,4 @@
-# vuestate-coursetro
+# Controlling State with Vue and VueX
 
 ## Project setup
 ```
@@ -25,5 +25,5 @@ npm run test
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Vue State Management
+The project uses Vue actions and mapMutations to modify state.
