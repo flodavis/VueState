@@ -1,5 +1,8 @@
 # Controlling State with Vue and VueX
 
+## Vue State Management
+The project uses Vue actions and mapMutations to modify state.
+
 ## Project setup
 ```
 npm install
@@ -25,5 +28,3 @@ npm run test
 npm run lint
 ```
 
-### Vue State Management
-The project uses Vue actions and mapMutations to modify state.
